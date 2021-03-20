@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "ss+kyxvbCn2J4krVZ+LfpfC8WREZMZ4ZNf8LNoTT+A+sv5C8igD0DBH76EsTkDoKYOVOraAWooGNfKmqzvPDsg==",
+  "dgSpecHash": "OuVBKCTpXx1MmlOlW+1ovm2GbN/rXTWRiINOdaYUWfevOLs68MdKd50xydUz8MvOoy+torSKENd874+HYnk7pw==",
   "success": true,
   "projectFilePath": "D:\\C_Sharp\\blazor-planner\\PlannerApp\\PlannerApp.Client\\PlannerApp.Client.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\tlswo\\.nuget\\packages\\aksoftware.webapi\\3.0.1\\aksoftware.webapi.3.0.1.nupkg.sha512",
     "C:\\Users\\tlswo\\.nuget\\packages\\microsoft.aspnetcore.authorization\\3.1.6\\microsoft.aspnetcore.authorization.3.1.6.nupkg.sha512",
     "C:\\Users\\tlswo\\.nuget\\packages\\microsoft.aspnetcore.components\\3.1.6\\microsoft.aspnetcore.components.3.1.6.nupkg.sha512",
     "C:\\Users\\tlswo\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\3.1.6\\microsoft.aspnetcore.components.analyzers.3.1.6.nupkg.sha512",
@@ -35,9 +36,10 @@
     "C:\\Users\\tlswo\\.nuget\\packages\\microsoft.jsinterop.webassembly\\3.2.1\\microsoft.jsinterop.webassembly.3.2.1.nupkg.sha512",
     "C:\\Users\\tlswo\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\tlswo\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "C:\\Users\\tlswo\\.nuget\\packages\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
     "C:\\Users\\tlswo\\.nuget\\packages\\radzen.blazor\\3.1.5\\radzen.blazor.3.1.5.nupkg.sha512",
     "C:\\Users\\tlswo\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
-    "C:\\Users\\tlswo\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512",
+    "C:\\Users\\tlswo\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
     "C:\\Users\\tlswo\\.nuget\\packages\\system.io\\4.3.0\\system.io.4.3.0.nupkg.sha512",
     "C:\\Users\\tlswo\\.nuget\\packages\\system.linq.dynamic.core\\1.2.2\\system.linq.dynamic.core.1.2.2.nupkg.sha512",
     "C:\\Users\\tlswo\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",

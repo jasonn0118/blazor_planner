@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "FaaSmmTVC0q/XLQ3tWM7l32prrJhtHP3r4K86l2XFbQYjlKUI7JXD5OwlpOtZTY7f19xWuTE3boZpZkfe/gV4A==",
+  "dgSpecHash": "2iMX+YiyaErMHwRnrYZlFX9zykaGjhCqmSk+YRKaHYD7ewo5R3Y7pRid5Ndy9bQ5qYgU87wCBXWXEK8fJumUzg==",
   "success": true,
   "projectFilePath": "D:\\C_Sharp\\blazor-planner\\PlannerApp\\PlannerApp.Shared\\PlannerApp.Shared.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\tlswo\\.nuget\\packages\\aksoftware.webapi\\3.0.1\\aksoftware.webapi.3.0.1.nupkg.sha512",
     "C:\\Users\\tlswo\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\tlswo\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Users\\tlswo\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\tlswo\\.nuget\\packages\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
+    "C:\\Users\\tlswo\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }

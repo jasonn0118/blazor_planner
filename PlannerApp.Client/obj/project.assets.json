@@ -2,6 +2,18 @@
   "version": 3,
   "targets": {
     ".NETStandard,Version=v2.1": {
+      "AKSoftware.WebApi/3.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "11.0.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/AKSoftware.WebApi.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AKSoftware.WebApi.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Authorization/3.1.6": {
         "type": "package",
         "dependencies": {
@@ -354,6 +366,15 @@
           "lib/netstandard1.0/_._": {}
         }
       },
+      "Newtonsoft.Json/11.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
       "Radzen.Blazor/3.1.5": {
         "type": "package",
         "dependencies": {
@@ -384,7 +405,7 @@
           "lib/netstandard2.0/System.Buffers.dll": {}
         }
       },
-      "System.ComponentModel.Annotations/4.7.0": {
+      "System.ComponentModel.Annotations/5.0.0": {
         "type": "package",
         "compile": {
           "ref/netstandard2.1/System.ComponentModel.Annotations.dll": {}
@@ -589,10 +610,37 @@
         "runtime": {
           "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
         }
+      },
+      "PlannerApp.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "AKSoftware.WebApi": "3.0.1",
+          "System.ComponentModel.Annotations": "5.0.0"
+        },
+        "compile": {
+          "bin/placeholder/PlannerApp.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PlannerApp.Shared.dll": {}
+        }
       }
     }
   },
   "libraries": {
+    "AKSoftware.WebApi/3.0.1": {
+      "sha512": "ngIG2OFvGVgB0Vw2ge0QBJQpxb7WH688UxWal6GTKZDfeNfHfNQaVd6kkt/+j3Y350bWnS6quIFZY2ZWOBaQcQ==",
+      "type": "package",
+      "path": "aksoftware.webapi/3.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "aksoftware.webapi.3.0.1.nupkg.sha512",
+        "aksoftware.webapi.nuspec",
+        "lib/netstandard2.0/AKSoftware.WebApi.dll",
+        "license.txt"
+      ]
+    },
     "Microsoft.AspNetCore.Authorization/3.1.6": {
       "sha512": "n0EC0W8jRpM2o1sKKYQpFuvE1sgW7juyEbhVZPcHy9VnHyZYvcIBHVJ6aPCtwqf/16KyqIB1XDVjPnPgyui47Q==",
       "type": "package",
@@ -1562,6 +1610,36 @@
         "runtime.json"
       ]
     },
+    "Newtonsoft.Json/11.0.2": {
+      "sha512": "IvJe1pj7JHEsP8B8J8DwlMEx8UInrs/x+9oVY+oCD13jpLu4JbJU2WCIsMRn5C4yW9+DgkaO8uiVE5VHKjpmdQ==",
+      "type": "package",
+      "path": "newtonsoft.json/11.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "newtonsoft.json.11.0.2.nupkg.sha512",
+        "newtonsoft.json.nuspec"
+      ]
+    },
     "Radzen.Blazor/3.1.5": {
       "sha512": "+s0d8DAd/4meXvGMJSYLjuqXwcz/9L2oXe9Gxj+kwcU1s6rC7YG0UmafBRPVYadLyxmIhKsmy3SMamVpQGETyg==",
       "type": "package",
@@ -1637,13 +1715,14 @@
         "version.txt"
       ]
     },
-    "System.ComponentModel.Annotations/4.7.0": {
-      "sha512": "0YFqjhp/mYkDGpU0Ye1GjE53HMp9UVfGN7seGpAMttAC0C40v5gw598jCgpbBLMmCo0E5YRLBv5Z2doypO49ZQ==",
+    "System.ComponentModel.Annotations/5.0.0": {
+      "sha512": "dMkqfy2el8A8/I76n2Hi1oBFEbG1SfxD2l5nhwXV3XjlnOmwxJlQbYpJH4W51odnU9sARCSAgv7S3CyAFMkpYg==",
       "type": "package",
-      "path": "system.componentmodel.annotations/4.7.0",
+      "path": "system.componentmodel.annotations/5.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "lib/MonoAndroid10/_._",
@@ -1720,7 +1799,7 @@
         "ref/xamarinmac20/_._",
         "ref/xamarintvos10/_._",
         "ref/xamarinwatchos10/_._",
-        "system.componentmodel.annotations.4.7.0.nupkg.sha512",
+        "system.componentmodel.annotations.5.0.0.nupkg.sha512",
         "system.componentmodel.annotations.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -2492,6 +2571,11 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "PlannerApp.Shared/1.0.0": {
+      "type": "project",
+      "path": "../PlannerApp.Shared/PlannerApp.Shared.csproj",
+      "msbuildProject": "../PlannerApp.Shared/PlannerApp.Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -2499,6 +2583,7 @@
       "Microsoft.AspNetCore.Components.WebAssembly >= 3.2.1",
       "Microsoft.AspNetCore.Components.WebAssembly.Build >= 3.2.1",
       "Microsoft.AspNetCore.Components.WebAssembly.DevServer >= 3.2.1",
+      "PlannerApp.Shared >= 1.0.0",
       "Radzen.Blazor >= 3.1.5",
       "System.Net.Http.Json >= 3.2.0"
     ]
@@ -2529,7 +2614,11 @@
       "frameworks": {
         "netstandard2.1": {
           "targetAlias": "netstandard2.1",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\C_Sharp\\blazor-planner\\PlannerApp\\PlannerApp.Shared\\PlannerApp.Shared.csproj": {
+              "projectPath": "D:\\C_Sharp\\blazor-planner\\PlannerApp\\PlannerApp.Shared\\PlannerApp.Shared.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
