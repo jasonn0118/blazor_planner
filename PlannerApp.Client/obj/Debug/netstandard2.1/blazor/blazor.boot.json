@@ -6,7 +6,7 @@
   "linkerEnabled": false,
   "resources": {
     "assembly": {
-      "PlannerApp.Client.dll": "sha256-Ar4fn6hDKn1u\/p2dY5BiU5jNG4z2+C1zYtH1hK8qnQ0=",
+      "PlannerApp.Client.dll": "sha256-bBXjx2\/ZxQamcXJVkpOvEwP1se2lTKnuUU6VswUD\/C0=",
       "System.Net.Http.Json.dll": "sha256-99dseBOagY3mzu5Y8Eqm8gRI+o8QbbCp7R2Ew9bQ+5E=",
       "System.Buffers.dll": "sha256-ZxXy75PYbzJxNfAc\/SAP1nUYm4gt1jSaOpFnBb9m85M=",
       "mscorlib.dll": "sha256-BaZPMj95+YNe3G4ckTGD6szZFwZeA2MOHn91zTGKDeU=",
@@ -50,6 +50,9 @@
       "Microsoft.AspNetCore.Components.Forms.dll": "sha256-m7Q+cF5\/ji3OMfdGlCuE8pQ\/iM+kxNHLq\/IEWVvIaOg=",
       "Microsoft.AspNetCore.Components.dll": "sha256-PEg9ghiKSWBTX0jq8pFDvv2Yvw92Y8W0ELtWrSE4fhA=",
       "Microsoft.Extensions.Logging.Abstractions.dll": "sha256-6gJMwefpsWLHWsEipZp143xn8k2Ea27upnXqjUT6iNI=",
+      "PlannerApp.Shared.dll": "sha256-FSevKneA9sHPxllmpYY7E+jcS1C9gx6cgZ7WHBJnRLM=",
+      "AKSoftware.WebApi.dll": "sha256-7JWNVz0\/Dx6CjuIiqs\/zeGmCpfmlWSvTC4XtlejArZA=",
+      "Newtonsoft.Json.dll": "sha256-gkIipvi93hhq6PE+WvoKU82xCfBcfl2PTHNjD3enxt4=",
       "Microsoft.AspNetCore.Components.WebAssembly.dll": "sha256-FJ+rEgcx6ljTxwbRXZSUGfrDKpVvOxHCSfNxbnXNn3M=",
       "Microsoft.Extensions.DependencyInjection.dll": "sha256-oK1Bjv95fH+hSbogUkJE+xDAI203kJG6lL6Sm\/NuPWg=",
       "Microsoft.Extensions.Primitives.dll": "sha256-y\/FyJQOcW2TOcTp7Iuv8brGBzL5ZP0oJdG7ysK+gtKc=",
@@ -65,8 +68,9 @@
       "Microsoft.JSInterop.WebAssembly.dll": "sha256-czNf3btAeBW\/vvID5LAfgcsNZ+GM3ssVuPaMflcg0rs="
     },
     "pdb": {
-      "PlannerApp.Client.pdb": "sha256-CDA625e1ArE7idzPj0PVjEGRy3MdXt4YnDYrxgSofwk=",
-      "System.Linq.Dynamic.Core.pdb": "sha256-zOBZ+bv44N0h0EaRYZhGqngeYcBonLjpA36C+TrA\/lA="
+      "PlannerApp.Client.pdb": "sha256-dmpdG\/ppCX\/LowOmyZkpTBmHocc1HY52i69rX8nIvbo=",
+      "System.Linq.Dynamic.Core.pdb": "sha256-zOBZ+bv44N0h0EaRYZhGqngeYcBonLjpA36C+TrA\/lA=",
+      "PlannerApp.Shared.pdb": "sha256-iD4eOzwDUdSlDtFJdwib2m5LCokXfz6UM\/AqXgmVycU="
     },
     "runtime": {
       "dotnet.3.2.0.js": "sha256-mPoqx7XczFHBWk3gRNn0hc9ekG1OvkKY4XiKRY5Mj5U=",
