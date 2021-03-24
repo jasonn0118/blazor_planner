@@ -3,13 +3,15 @@
 @using PlannerApp.Shared.Models
 
 @inject AuthenticationService authService
-@inject NavigationManager navigationManager;
+@inject NavigationManager navigationManager
+@inject ILocalStorageService storageService
 <div class="row">
     <div class="col-12">
         <h2>Login to your account</h2>
         <EditForm Model="model" OnValidSubmit="LoginUser">
             <RadzenCard>
                 <AlertMessage Message="@message" MessageType="@messageType" />
+                
                 <DataAnnotationsValidator />
                 <ValidationSummary />
 
@@ -38,24 +40,36 @@
     string message = string.Empty;
     Models.AlertMessageType messageType = Models.AlertMessageType.Success;
 
+
     public async Task LoginUser()
     {
-        //Console.WriteLine("I'm here!!!>>> CALLLLLEEEEDD");
-        //isBusy = true;
-        //var result = await authService.RegisterUserAsync(model);
+        isBusy = true;
+        var result = await authService.LoginUserAsync(model);
 
-        //if (result.IsSuccess)
-        //{
-        //    message = result.Message;
-        //    messageType = Models.AlertMessageType.Success;
-        //}
-        //else
-        //{
-        //    message = result.Errors.FirstOrDefault() ?? result.Message;
-        //    messageType = Models.AlertMessageType.Error;
 
-        //}
-        //isBusy = false;
+        if (result.IsSuccess)
+        {
+            message = "Welcome to Planner App.";
+            messageType = Models.AlertMessageType.Success;
+
+            var userInfo = new PlannerApp.Client.Models.LocalUserInfo()
+            {
+                AccessToken = result.Message,
+                Email = result.UserInfo["Email"],
+                FirstName = result.UserInfo["FirstName"],
+                LastName = result.UserInfo["LastName"],
+                Id = result.UserInfo[System.Security.Claims.ClaimTypes.NameIdentifier],
+            };
+            await storageService.SetItemAsync("User", userInfo);
+
+        }
+        else
+        {
+            message = result.Message;
+            messageType = Models.AlertMessageType.Error;
+
+        }
+        isBusy = false;
     }
     void NavigateToRegister()
     {
