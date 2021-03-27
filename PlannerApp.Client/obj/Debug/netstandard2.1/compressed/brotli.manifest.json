@@ -1,7 +1,7 @@
 {
   "FilesToCompress": [
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\3Dxj1iPF7Jfw5gjXLG7ZIWYFT1hMaaP86hqEr0Bk_go=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\T7rCQ23Gz1KFbqxeK2rXgv6qNMQIPBaoHAN1ZCGd6gw=.hash",
       "Source": "D:\\C_Sharp\\blazor-planner\\PlannerApp\\PlannerApp.Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\PlannerApp.Client.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/PlannerApp.Client.dll.br"
     },
@@ -156,11 +156,6 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.Text.Encodings.Web.dll.br"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\AgVYuBd1GknHPqezR99MdmxA6ZC4ZbQx0hDEPabTo_E=.hash",
-      "Source": "D:\\C_Sharp\\blazor-planner\\PlannerApp\\PlannerApp.Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.AspNetCore.Authorization.dll",
-      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.AspNetCore.Authorization.dll.br"
-    },
-    {
       "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\PXFFeWQDF2EufmghmkU9yCINy_4ke1MuzO3ll8B-r3o=.hash",
       "Source": "D:\\C_Sharp\\blazor-planner\\PlannerApp\\PlannerApp.Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.Extensions.Options.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.Options.dll.br"
@@ -174,16 +169,6 @@
       "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\t9RWyCvJkH08tKwurNv3EzfASF5PNJMAWCJG85bdHnc=.hash",
       "Source": "D:\\C_Sharp\\blazor-planner\\PlannerApp\\PlannerApp.Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.Extensions.DependencyInjection.Abstractions.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.DependencyInjection.Abstractions.dll.br"
-    },
-    {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\LZ6KwVwcZLGKU9co7q_5PN23hxjMRRNk_uG4zUc6Xug=.hash",
-      "Source": "D:\\C_Sharp\\blazor-planner\\PlannerApp\\PlannerApp.Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.AspNetCore.Metadata.dll",
-      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.AspNetCore.Metadata.dll.br"
-    },
-    {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\GdrphsMFkQs4xEywMFwnGsbXWdsbx9wSq4VLofxqjLg=.hash",
-      "Source": "D:\\C_Sharp\\blazor-planner\\PlannerApp\\PlannerApp.Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.Extensions.Logging.Abstractions.dll",
-      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.Logging.Abstractions.dll.br"
     },
     {
       "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\M0qxXdKjsv05qptIGjc4x_zAG_UHbo2o10eohX7S_4A=.hash",
@@ -239,6 +224,21 @@
       "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\BcoQTkDUdYHwQBb2Bll4Q9nO4_aB8LzAq8SBGUFZKSw=.hash",
       "Source": "D:\\C_Sharp\\blazor-planner\\PlannerApp\\PlannerApp.Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.AspNetCore.Components.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.AspNetCore.Components.dll.br"
+    },
+    {
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\GdrphsMFkQs4xEywMFwnGsbXWdsbx9wSq4VLofxqjLg=.hash",
+      "Source": "D:\\C_Sharp\\blazor-planner\\PlannerApp\\PlannerApp.Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.Extensions.Logging.Abstractions.dll",
+      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.Logging.Abstractions.dll.br"
+    },
+    {
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\AgVYuBd1GknHPqezR99MdmxA6ZC4ZbQx0hDEPabTo_E=.hash",
+      "Source": "D:\\C_Sharp\\blazor-planner\\PlannerApp\\PlannerApp.Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.AspNetCore.Authorization.dll",
+      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.AspNetCore.Authorization.dll.br"
+    },
+    {
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\LZ6KwVwcZLGKU9co7q_5PN23hxjMRRNk_uG4zUc6Xug=.hash",
+      "Source": "D:\\C_Sharp\\blazor-planner\\PlannerApp\\PlannerApp.Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.AspNetCore.Metadata.dll",
+      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.AspNetCore.Metadata.dll.br"
     },
     {
       "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\SSOxg-SgBktyg7gv-t-0XbBeaBSTLyaRN-9oj2UhaZI=.hash",
@@ -321,7 +321,7 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.AspNetCore.Components.Authorization.dll.br"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\Ontr5vBvh2R2h04yffjKKW8RIXBdjfLifxlOgt2d1V4=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\n5bWGSPzlQew_UC-a7QlioL9QbonWd3KOEPv1Y0uL9M=.hash",
       "Source": "D:\\C_Sharp\\blazor-planner\\PlannerApp\\PlannerApp.Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\PlannerApp.Client.pdb",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/PlannerApp.Client.pdb.br"
     },
@@ -356,7 +356,7 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/blazor.webassembly.js.br"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\yWwZQ_YxW4u8LuNbk6V2QL_btfXkAO8eGd5f4f3xnDY=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\h6p4YGyAy_iBUZqCoYVrm4Yz0-ULJ5DJpi3wbqYSOQM=.hash",
       "Source": "D:\\C_Sharp\\blazor-planner\\PlannerApp\\PlannerApp.Client\\obj\\Debug\\netstandard2.1\\blazor\\blazor.boot.json",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/blazor.boot.json.br"
     }

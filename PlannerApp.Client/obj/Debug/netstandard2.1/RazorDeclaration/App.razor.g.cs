@@ -97,6 +97,13 @@ using Blazored.LocalStorage;
 #line hidden
 #nullable disable
 #nullable restore
+#line 14 "D:\C_Sharp\blazor-planner\PlannerApp\PlannerApp.Client\_Imports.razor"
+using Microsoft.AspNetCore.Authorization;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 1 "D:\C_Sharp\blazor-planner\PlannerApp\PlannerApp.Client\App.razor"
 using Microsoft.AspNetCore.Components.Authorization;
 

@@ -101,6 +101,13 @@ using Microsoft.AspNetCore.Components.Authorization;
 #line hidden
 #nullable disable
 #nullable restore
+#line 14 "D:\C_Sharp\blazor-planner\PlannerApp\PlannerApp.Client\_Imports.razor"
+using Microsoft.AspNetCore.Authorization;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 3 "D:\C_Sharp\blazor-planner\PlannerApp\PlannerApp.Client\Pages\Auth\Register.razor"
 using PlannerApp.Shared.Models;
 

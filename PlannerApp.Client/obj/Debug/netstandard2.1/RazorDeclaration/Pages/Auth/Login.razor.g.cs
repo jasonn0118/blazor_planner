@@ -104,6 +104,13 @@ using Microsoft.AspNetCore.Components.Authorization;
 #line hidden
 #nullable disable
 #nullable restore
+#line 14 "D:\C_Sharp\blazor-planner\PlannerApp\PlannerApp.Client\_Imports.razor"
+using Microsoft.AspNetCore.Authorization;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 3 "D:\C_Sharp\blazor-planner\PlannerApp\PlannerApp.Client\Pages\Auth\Login.razor"
 using PlannerApp.Shared.Models;
 
@@ -137,9 +144,6 @@ using PlannerApp.Shared.Models;
 
         if (result.IsSuccess)
         {
-            message = "Welcome to Planner App.";
-            messageType = Models.AlertMessageType.Success;
-
             var userInfo = new PlannerApp.Client.Models.LocalUserInfo()
             {
                 AccessToken = result.Message,
@@ -149,6 +153,9 @@ using PlannerApp.Shared.Models;
                 Id = result.UserInfo[System.Security.Claims.ClaimTypes.NameIdentifier],
             };
             await storageService.SetItemAsync("User", userInfo);
+
+            //After login we send the user to index(Landing) page.
+            navigationManager.NavigateTo("/");
 
         }
         else
