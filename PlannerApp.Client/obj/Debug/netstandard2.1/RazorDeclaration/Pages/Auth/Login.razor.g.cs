@@ -127,7 +127,7 @@ using PlannerApp.Shared.Models;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 36 "D:\C_Sharp\blazor-planner\PlannerApp\PlannerApp.Client\Pages\Auth\Login.razor"
+#line 38 "D:\C_Sharp\blazor-planner\PlannerApp\PlannerApp.Client\Pages\Auth\Login.razor"
        
     LoginRequest model = new LoginRequest();
 
@@ -153,6 +153,8 @@ using PlannerApp.Shared.Models;
                 Id = result.UserInfo[System.Security.Claims.ClaimTypes.NameIdentifier],
             };
             await storageService.SetItemAsync("User", userInfo);
+            //Wait until the update local storage user info.
+            await authenticationStateProvider.GetAuthenticationStateAsync();
 
             //After login we send the user to index(Landing) page.
             navigationManager.NavigateTo("/");
@@ -174,6 +176,7 @@ using PlannerApp.Shared.Models;
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private AuthenticationStateProvider authenticationStateProvider { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private ILocalStorageService storageService { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager navigationManager { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private AuthenticationService authService { get; set; }

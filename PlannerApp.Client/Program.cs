@@ -25,6 +25,8 @@ namespace PlannerApp.Client
             builder.Services.AddBlazoredLocalStorage();
             builder.Services.AddOptions();
             builder.Services.AddAuthorizationCore();
+            
+            // Adds a scoped service of the type specified in TService with an implementation type specified in TImplementation to the specified
             builder.Services.AddScoped<AuthenticationStateProvider, LocalAuthenticationStateProvider>();
             builder.RootComponents.Add<App>("app");
 

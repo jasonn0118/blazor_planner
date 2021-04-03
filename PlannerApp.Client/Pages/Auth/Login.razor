@@ -60,6 +60,7 @@
                 Id = result.UserInfo[System.Security.Claims.ClaimTypes.NameIdentifier],
             };
             await storageService.SetItemAsync("User", userInfo);
+            //Wait until the update local storage user info.
             await authenticationStateProvider.GetAuthenticationStateAsync();
 
             //After login we send the user to index(Landing) page.

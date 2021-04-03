@@ -37,13 +37,20 @@ namespace PlannerApp.Client
                 var identity = new ClaimsIdentity(claims, "BearerToken");
                 var user = new ClaimsPrincipal(identity);
                 var state = new AuthenticationState(user);
-
+                //Blazor app doesn't automatically notify the change.
                 NotifyAuthenticationStateChanged(Task.FromResult(state));
 
                 return state;
             }
 
             return new AuthenticationState(new ClaimsPrincipal());
+        }
+
+        public async Task LogoutAsync()
+        {
+            //Remove User data in the local storage.
+            await _storageService.RemoveItemAsync("User");
+            NotifyAuthenticationStateChanged(Task.FromResult(new AuthenticationState(new ClaimsPrincipal())));
         }
     }
 }

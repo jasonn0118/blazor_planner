@@ -4,7 +4,7 @@
 #pragma warning disable 0649
 #pragma warning disable 0169
 
-namespace PlannerApp.Client
+namespace PlannerApp.Client.Shared
 {
     #line hidden
     using System;
@@ -97,33 +97,44 @@ using Blazored.LocalStorage;
 #line hidden
 #nullable disable
 #nullable restore
-#line 14 "D:\C_Sharp\blazor-planner\PlannerApp\PlannerApp.Client\_Imports.razor"
-using Microsoft.AspNetCore.Authorization;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 1 "D:\C_Sharp\blazor-planner\PlannerApp\PlannerApp.Client\App.razor"
+#line 13 "D:\C_Sharp\blazor-planner\PlannerApp\PlannerApp.Client\_Imports.razor"
 using Microsoft.AspNetCore.Components.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "D:\C_Sharp\blazor-planner\PlannerApp\PlannerApp.Client\App.razor"
-using PlannerApp.Client.Pages.Auth;
+#line 14 "D:\C_Sharp\blazor-planner\PlannerApp\PlannerApp.Client\_Imports.razor"
+using Microsoft.AspNetCore.Authorization;
 
 #line default
 #line hidden
 #nullable disable
-    public partial class App : Microsoft.AspNetCore.Components.ComponentBase
+    public partial class UserStatus : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 8 "D:\C_Sharp\blazor-planner\PlannerApp\PlannerApp.Client\Shared\UserStatus.razor"
+       
+
+    async Task Logout()
+    {
+        //Cascading... Question.
+        var localStateProvider = (LocalAuthenticationStateProvider)authenticationStateProvider;
+
+        await localStateProvider.LogoutAsync();
+        navigationManager.NavigateTo("/auth/login");
+    }
+
+#line default
+#line hidden
+#nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager navigationManager { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private AuthenticationStateProvider authenticationStateProvider { get; set; }
     }
 }
 #pragma warning restore 1591

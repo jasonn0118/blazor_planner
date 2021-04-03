@@ -444,6 +444,10 @@ D:\C_Sharp\blazor-planner\PlannerApp\PlannerApp.Client\obj\Debug\netstandard2.1\
 D:\C_Sharp\blazor-planner\PlannerApp\PlannerApp.Client\obj\Debug\netstandard2.1\compressed\_framework\_bin\Microsoft.AspNetCore.Authorization.dll.br
 D:\C_Sharp\blazor-planner\PlannerApp\PlannerApp.Client\obj\Debug\netstandard2.1\compressed\_framework\_bin\Microsoft.AspNetCore.Metadata.dll.br
 D:\C_Sharp\blazor-planner\PlannerApp\PlannerApp.Client\obj\Debug\netstandard2.1\compressed\_framework\_bin\Microsoft.AspNetCore.Components.Authorization.dll.br
-D:\C_Sharp\blazor-planner\PlannerApp\PlannerApp.Client\obj\Debug\netstandard2.1\integrity\T7rCQ23Gz1KFbqxeK2rXgv6qNMQIPBaoHAN1ZCGd6gw=.hash
-D:\C_Sharp\blazor-planner\PlannerApp\PlannerApp.Client\obj\Debug\netstandard2.1\integrity\n5bWGSPzlQew_UC-a7QlioL9QbonWd3KOEPv1Y0uL9M=.hash
-D:\C_Sharp\blazor-planner\PlannerApp\PlannerApp.Client\obj\Debug\netstandard2.1\integrity\h6p4YGyAy_iBUZqCoYVrm4Yz0-ULJ5DJpi3wbqYSOQM=.hash
+D:\C_Sharp\blazor-planner\PlannerApp\PlannerApp.Client\obj\Debug\netstandard2.1\RazorDeclaration\Pages\Auth\RedirectToLogin.razor.g.cs
+D:\C_Sharp\blazor-planner\PlannerApp\PlannerApp.Client\obj\Debug\netstandard2.1\Razor\Pages\Auth\RedirectToLogin.razor.g.cs
+D:\C_Sharp\blazor-planner\PlannerApp\PlannerApp.Client\obj\Debug\netstandard2.1\RazorDeclaration\Shared\UserStatus.razor.g.cs
+D:\C_Sharp\blazor-planner\PlannerApp\PlannerApp.Client\obj\Debug\netstandard2.1\Razor\Shared\UserStatus.razor.g.cs
+D:\C_Sharp\blazor-planner\PlannerApp\PlannerApp.Client\obj\Debug\netstandard2.1\integrity\uFUsWfZv4fJv2vit4PpyzMD4ILDKGDXoCGCR_4OQ8SI=.hash
+D:\C_Sharp\blazor-planner\PlannerApp\PlannerApp.Client\obj\Debug\netstandard2.1\integrity\CJ46zSodck6rtZWzDYTDLeD1nUHabmRb3KR2cm_sfUg=.hash
+D:\C_Sharp\blazor-planner\PlannerApp\PlannerApp.Client\obj\Debug\netstandard2.1\integrity\CQL7xzkCOEy0cCcu4Q0hhHFc_KSQwhEZQ127JivWkiI=.hash
