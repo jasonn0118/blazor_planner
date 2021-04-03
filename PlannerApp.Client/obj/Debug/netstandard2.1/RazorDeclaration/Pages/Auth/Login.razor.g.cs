@@ -90,6 +90,27 @@ using PlannerApp.Shared.Services;
 #line hidden
 #nullable disable
 #nullable restore
+#line 12 "D:\C_Sharp\blazor-planner\PlannerApp\PlannerApp.Client\_Imports.razor"
+using Blazored.LocalStorage;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 13 "D:\C_Sharp\blazor-planner\PlannerApp\PlannerApp.Client\_Imports.razor"
+using Microsoft.AspNetCore.Components.Authorization;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 14 "D:\C_Sharp\blazor-planner\PlannerApp\PlannerApp.Client\_Imports.razor"
+using Microsoft.AspNetCore.Authorization;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 3 "D:\C_Sharp\blazor-planner\PlannerApp\PlannerApp.Client\Pages\Auth\Login.razor"
 using PlannerApp.Shared.Models;
 
@@ -106,7 +127,7 @@ using PlannerApp.Shared.Models;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 34 "D:\C_Sharp\blazor-planner\PlannerApp\PlannerApp.Client\Pages\Auth\Login.razor"
+#line 38 "D:\C_Sharp\blazor-planner\PlannerApp\PlannerApp.Client\Pages\Auth\Login.razor"
        
     LoginRequest model = new LoginRequest();
 
@@ -114,24 +135,38 @@ using PlannerApp.Shared.Models;
     string message = string.Empty;
     Models.AlertMessageType messageType = Models.AlertMessageType.Success;
 
+
     public async Task LoginUser()
     {
-        //Console.WriteLine("I'm here!!!>>> CALLLLLEEEEDD");
-        //isBusy = true;
-        //var result = await authService.RegisterUserAsync(model);
+        isBusy = true;
+        var result = await authService.LoginUserAsync(model);
 
-        //if (result.IsSuccess)
-        //{
-        //    message = result.Message;
-        //    messageType = Models.AlertMessageType.Success;
-        //}
-        //else
-        //{
-        //    message = result.Errors.FirstOrDefault() ?? result.Message;
-        //    messageType = Models.AlertMessageType.Error;
 
-        //}
-        //isBusy = false;
+        if (result.IsSuccess)
+        {
+            var userInfo = new PlannerApp.Client.Models.LocalUserInfo()
+            {
+                AccessToken = result.Message,
+                Email = result.UserInfo["Email"],
+                FirstName = result.UserInfo["FirstName"],
+                LastName = result.UserInfo["LastName"],
+                Id = result.UserInfo[System.Security.Claims.ClaimTypes.NameIdentifier],
+            };
+            await storageService.SetItemAsync("User", userInfo);
+            //Wait until the update local storage user info.
+            await authenticationStateProvider.GetAuthenticationStateAsync();
+
+            //After login we send the user to index(Landing) page.
+            navigationManager.NavigateTo("/");
+
+        }
+        else
+        {
+            message = result.Message;
+            messageType = Models.AlertMessageType.Error;
+
+        }
+        isBusy = false;
     }
     void NavigateToRegister()
     {
@@ -141,6 +176,8 @@ using PlannerApp.Shared.Models;
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private AuthenticationStateProvider authenticationStateProvider { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private ILocalStorageService storageService { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager navigationManager { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private AuthenticationService authService { get; set; }
     }

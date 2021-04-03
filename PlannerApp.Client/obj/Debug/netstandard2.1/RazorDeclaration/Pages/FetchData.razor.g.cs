@@ -89,6 +89,27 @@ using PlannerApp.Shared.Services;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 12 "D:\C_Sharp\blazor-planner\PlannerApp\PlannerApp.Client\_Imports.razor"
+using Blazored.LocalStorage;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 13 "D:\C_Sharp\blazor-planner\PlannerApp\PlannerApp.Client\_Imports.razor"
+using Microsoft.AspNetCore.Components.Authorization;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 14 "D:\C_Sharp\blazor-planner\PlannerApp\PlannerApp.Client\_Imports.razor"
+using Microsoft.AspNetCore.Authorization;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/fetchdata")]
     public partial class FetchData : Microsoft.AspNetCore.Components.ComponentBase
     {

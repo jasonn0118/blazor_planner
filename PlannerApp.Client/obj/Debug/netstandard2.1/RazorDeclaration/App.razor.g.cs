@@ -89,6 +89,34 @@ using PlannerApp.Shared.Services;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 12 "D:\C_Sharp\blazor-planner\PlannerApp\PlannerApp.Client\_Imports.razor"
+using Blazored.LocalStorage;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 14 "D:\C_Sharp\blazor-planner\PlannerApp\PlannerApp.Client\_Imports.razor"
+using Microsoft.AspNetCore.Authorization;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 1 "D:\C_Sharp\blazor-planner\PlannerApp\PlannerApp.Client\App.razor"
+using Microsoft.AspNetCore.Components.Authorization;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 2 "D:\C_Sharp\blazor-planner\PlannerApp\PlannerApp.Client\App.razor"
+using PlannerApp.Client.Pages.Auth;
+
+#line default
+#line hidden
+#nullable disable
     public partial class App : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
